@@ -1,8 +1,35 @@
 .App {
-  text-align: center;
+  margin: 0 auto;
+  max-width: 1080px;
 }
 
-.App-logo {
+.App h1 {
+  font-size: 70px;
+}
+
+.ArticleCard {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 25px 30px;
+  margin: 30px 0;
+}
+
+.ArticleCardImage {
+  flex-basis: 30%;
+  padding-right: 30px;
+}
+
+.ArticleCardImage img {
+  height: auto; 
+  width: 100%;
+}
+
+.ArticleCardText {
+  flex-basis: 70%;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +62,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
