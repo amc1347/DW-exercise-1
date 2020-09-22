@@ -2,7 +2,40 @@ import React from 'react';
  
 import { Link } from 'react-router-dom';
 
+const days = [
+    "Sunday",
+    "Monday", 
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+]
+
+const months = [
+    "January", 
+    "February",
+    "March", 
+    "April", 
+    "May", 
+    "June", 
+    "July",
+    "September",
+    "October", 
+    "November", 
+    "Decemeber"
+]
+
 function ArticleCard({ articleData }) {
+    const date = new Date(articleData.publishedDate);
+
+    const dayOfWeek = date.getDay();
+    const calendarDate = date.getDate();
+    const month = date.getMonth();
+    const year = date.getFullYear();
+
+    console.log('Full Date:' ,`${days[dayOfWeek]}, ${months[month]} ${calendarDate} ${year}`)
+
     return(
         <div className="ArticleCard">
             <div className="ArticleCardImage">
@@ -10,7 +43,8 @@ function ArticleCard({ articleData }) {
             </div>
             <div className="ArticleCardText">
                 <h2>{articleData.title}</h2>
-                <p> {articleData.publishedDate}</p>
+                <p>{`${days[dayOfWeek]}, ${months[month]} ${calendarDate}, ${year}`}</p>
+                {/* <p> {articleData.publishedDate}</p> */}
                 <p> {articleData.blurb}</p>
                 <Link to={`article/${articleData.id}`}> Read More</Link>
             </div>
