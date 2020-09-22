@@ -28,13 +28,12 @@ const months = [
 
 function ArticleCard({ articleData }) {
     const date = new Date(articleData.publishedDate);
-
     const dayOfWeek = date.getDay();
     const calendarDate = date.getDate();
     const month = date.getMonth();
     const year = date.getFullYear();
 
-    console.log('Full Date:' ,`${days[dayOfWeek]}, ${months[month]} ${calendarDate} ${year}`)
+    // console.log('Full Date:' ,`${days[dayOfWeek]}, ${months[month]} ${calendarDate} ${year}`)
 
     return(
         <div className="ArticleCard">
@@ -55,19 +54,3 @@ function ArticleCard({ articleData }) {
 }
 
 export default ArticleCard
-
-// const sampleObject = {
-//     key: 'value',
-//     objectKey: {
-//         key2: 'value2'
-//     }
-// }
-
-// const coolObject = {
-//     key1: '',
-//     key2: '',
-//     key3: ''
-// }
-
-// const { key1, key2} = coolObject;
-// console.log(key1, key2)

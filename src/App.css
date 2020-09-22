@@ -7,6 +7,10 @@
   font-size: 70px;
 }
 
+.ArticleListing {
+
+}
+
 .ArticleCard {
   border: 1px solid black;
   display: flex;
@@ -27,6 +31,38 @@
 
 .ArticleCardText {
   flex-basis: 70%;
+}
+
+.Article {
+  background-image: ;
+
+}
+
+.ArticleHeaderWrapper {
+  background-color: #e5e5e5;  
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding-bottom: 45px;
+  padding-top: 65px;
+}
+
+.ArticleHeader {
+  margin: 0 auto;
+  max-width: 600px
+}
+
+.ArticleHeader h1{
+  font-size: 48px;
+  margin: 0;
+}
+
+.ArticleHeaderBlurb {
+  font-size: 20px;
+}
+
+.ArticleBody {
+
 }
 
 /* .App-logo {
