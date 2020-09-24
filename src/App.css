@@ -34,7 +34,6 @@
 }
 
 .Article {
-  background-image: ;
 
 }
 
@@ -53,8 +52,10 @@
 }
 
 .ArticleHeader h1{
-  font-size: 48px;
+  font-size: 63px;
   margin: 0;
+  font-weight: normal;
+  padding-bottom: -10px;
 }
 
 .ArticleHeaderBlurb {
@@ -63,6 +64,10 @@
 
 .ArticleBody {
 
+}
+
+.ArticleListing h1 {
+  font-weight: normal;
 }
 
 /* .App-logo {
