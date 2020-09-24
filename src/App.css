@@ -7,6 +7,10 @@
   font-size: 70px;
 }
 
+.ArticleBody h2 {
+  font-size: 32px;
+}
+
 .ArticleListing {
 
 }
@@ -48,14 +52,18 @@
 
 .ArticleHeader {
   margin: 0 auto;
-  max-width: 600px
+  max-width: 600px;
 }
 
 .ArticleHeader h1{
   font-size: 63px;
   margin: 0;
   font-weight: normal;
-  padding-bottom: -10px;
+  padding: 0 0 -20px 0;
+}
+
+.Article {
+
 }
 
 .ArticleHeaderBlurb {
@@ -69,6 +77,7 @@
 .ArticleListing h1 {
   font-weight: normal;
 }
+
 
 /* .App-logo {
   height: 40vmin;
